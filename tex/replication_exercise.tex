@@ -1,0 +1,148 @@
+\documentclass[11pt,a4paper]{article}   
+
+\usepackage{mathpazo}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+
+\usepackage{geometry}
+\geometry{
+	a4paper,
+	left=25mm,
+	top=20mm,
+	bottom=20mm,
+	right=25mm
+}
+
+
+\usepackage{float}
+\usepackage{graphicx} 						
+\usepackage{booktabs}
+\usepackage{subcaption, multirow}
+
+\usepackage{array}
+\newcolumntype{x}[1]{>{\centering\arraybackslash}p{#1}}
+
+\begin{document}
+
+\title{Replication Exercise  \\ 
+Cycles of Fire? Politics and Forest Burning in Indonesia}
+
+\author{Sankalp Sharma}
+\date{\today}
+
+\maketitle
+
+\section{Introduction}
+
+The goal of this exercise is to replicate the figures and tables for the paper "Cycles of Fire? Politics and Forest Burning in Indonesia" by Clare Balboni, Robin Burgess, Anton Heil, Jonathan Old and Benjamin A. Olken.
+
+\appendix
+\setcounter{section}{1}
+\section{Full regression results by land types\label{sec:regtables}}
+\setcounter{table}{0}
+\renewcommand{\thetable}{B\arabic{table}}
+\setcounter{figure}{0}
+\renewcommand{\thefigure}{B\arabic{figure}}
+
+\begin{table}[H]
+	\centering
+	\caption{Electoral cycle by land types -- Ignitions, District and Year FE}
+	\scalebox{0.85}{%
+	  \begin{tabular}{l *{7}{x{1.7cm}}}
+		\toprule
+		  & (1) & (2) & (3) & (4) & (5) & (6) & (7) \\
+		  & All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+		\midrule
+		\textbf{Election date:}  \\
+		\input{../output/tables/table_b1.tex} \\ 
+		\addlinespace
+		\multicolumn{8}{l}{\footnotesize Note: Standard errors clustered at 2018 district level in parentheses.}
+	  \end{tabular}%
+	}
+  \end{table}
+
+\begin{table}[H]
+	\centering
+	\caption{Electoral cycle by land types -- Total area burned, District and Year FE}
+	\scalebox{0.85}{%
+\begin{tabular}{l x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} }
+\toprule
+		& (1) & (2) & (3) & (4) & (5) & (6) & (7)  \\
+	& All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+ \midrule
+ \textbf{Election date:}  \\
+	\input{../output/tables/table_b2.tex} \\
+\addlinespace
+\multicolumn{8}{l}{Note: Standard errors clustered at 2018 district level in parentheses.}
+ \end{tabular}%
+	}
+\end{table}
+
+
+\begin{table}[H]
+	\caption{Electoral cycle by land types -- Slash and burn, District and Year FE}
+	\scalebox{0.85}{%
+\begin{tabular}{l x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} }
+\toprule
+		& (1) & (2) & (3) & (4) & (5) & (6) & (7)  \\
+	& All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+ \midrule
+ \textbf{Election date:}  \\
+	\input{../output/tables/table_b3.tex} \\
+\addlinespace
+\multicolumn{8}{l}{Note: Standard errors clustered at 2018 district level in parentheses.}
+ \end{tabular}%
+ }
+\end{table}
+
+\begin{table}[H]
+	\caption{Electoral cycle by land types -- Ignitions, District and Province $\times$ Year FE}
+	\scalebox{0.85}{%
+\begin{tabular}{l x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} }
+\toprule
+		& (1) & (2) & (3) & (4) & (5) & (6) & (7)  \\
+	& All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+ \midrule
+ \textbf{Election date:}  \\
+	\input{../output/tables/table_b4.tex} \\
+\addlinespace
+\multicolumn{8}{l}{Note: Standard errors clustered at 2018 district level in parentheses.}
+ \end{tabular}%
+ }
+\end{table}
+
+\begin{table}[H]
+	\caption{Electoral cycle by land types -- Total area burned, District and  Province $\times$ Year FE}
+	\scalebox{0.85}{%
+\begin{tabular}{l x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} }
+\toprule
+		& (1) & (2) & (3) & (4) & (5) & (6) & (7)  \\
+	& All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+ \midrule
+ \textbf{Election date:}  \\
+	\input{../output/tables/table_b5.tex} \\
+\addlinespace
+\multicolumn{8}{l}{Note: Standard errors clustered at 2018 district level in parentheses.}
+ \end{tabular}%
+ }
+\end{table}
+
+\begin{table}[H]
+	\caption{Electoral cycle by land types -- Slash and burn, District and  Province $\times$ Year FE?}
+	\scalebox{0.85}{%
+\begin{tabular}{l x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} x{1.7cm} }
+\toprule
+		& (1) & (2) & (3) & (4) & (5) & (6) & (7)  \\
+	& All Forest & Concession & Oil Palm & Fibre & Logging & Unleased & Protected \\
+ \midrule
+ \textbf{Election date:}  \\
+	\input{../output/tables/table_b6.tex} \\
+\addlinespace
+\multicolumn{8}{l}{Note: Standard errors clustered at 2018 district level in parentheses.}
+ \end{tabular}%
+ }
+\end{table}
+
+
+
+\end{document}
